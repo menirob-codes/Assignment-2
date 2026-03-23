@@ -1,36 +1,88 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Page</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f9;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-    </style>
-</head>
-<body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="container">
-        <h1>Hello, World!</h1>
-        <p>This is a short, valid HTML5 document.</p>
-        <button onclick="alert('You clicked the button!')">Click Me</button>
-    </div>
+<title>Flower Shop</title>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="font-sans">
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="flex items-center justify-between px-6 py-4">
+
+  <!-- Logo -->
+  <div class="text-2xl font-bold">
+    <img src="images/assets/logo.png" alt="">
+  </div>
+
+  <!-- Menu -->
+  <ul class="hidden md:flex gap-8 text-lg">
+    <li><a href="#" class="hover:text-pink-500">Home</a></li>
+    <li><a href="#" class="hover:text-pink-500">Shop</a></li>
+    <li><a href="#" class="hover:text-pink-500">About Us</a></li>
+  </ul>
+
+  <!-- Cart -->
+  <div class="flex items-center gap-2 font-semibold">
+    🛒 <span>Cart</span>
+  </div>
+
+</nav>
+
+
+
+
+
+
+
+
+<!-- ================= BANNER ================= -->
+
+<section class="flex flex-col-reverse md:flex-row items-center justify-between px-6 py-12">
+
+  <!-- Banner Text -->
+  <div class="md:w-1/2 text-left">
+
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">
+       ALWAYS FRESH
+FLOWERS
+    </h1>
+
+    <p class="text-gray-600 text-lg">
+      
+      Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
+    </p>
+
+  </div>
+
+  <!-- Banner Image -->
+  <div class="md:w-1/2 mb-6 md:mb-0">
+    <img src="images/assets/hero-flower.png"
+    alt="flowers"
+    class="w-full rounded-lg">
+  </div>
+
+</section>
+
 
 </body>
 </html>
